@@ -69,7 +69,7 @@ services:
     volumes:
       - ./pgadmin/entrypoint.sh:/entrypoint_custom.sh
       - ./pgadmin/data/:/var/lib/pgadmin/
-    entrypoint: /entrypoint_custom.sh
+    entrypoint: ["/bin/sh", "-c", "chmod +x /entrypoint_custom.sh && /entrypoint_custom.sh"]
 
 volumes:
   postgres_conndatos_data:
