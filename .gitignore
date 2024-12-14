@@ -1,5 +1,4 @@
-/db-data/
-/pgadmin-data/
 .env
-/postgres-data/
-/pgadmin-data/
+/postgres/conndatos/data
+/postgres/lms/data
+/pgadmin/data
